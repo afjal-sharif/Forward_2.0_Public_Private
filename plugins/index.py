@@ -153,7 +153,7 @@ async def cb_handler(bot: Client, query: CallbackQuery):
             return
         input=get_caption.text
         if input == "0":
-            caption=None
+            caption= file_name
         else:
             caption=input
         break
