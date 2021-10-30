@@ -152,9 +152,8 @@ async def cb_handler(bot: Client, query: CallbackQuery):
             await bot.send_message(query.from_user.id, "Error!!\n\nRequest timed out.\nRestart by using /index")
             return
         input=get_caption.text
-        file_name=media.file_name
         if input == "0":
-            caption=file_name
+            caption=None
         else:
             caption=input
         break
